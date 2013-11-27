@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+  <head>
+    <link href="/css/main.css" media="all" rel="stylesheet">
+    <title><%= sign.upcase %></title>
+  </head>
+
+  <body>
+    <div class='header'>
+      <%= sign %>
+    </div>
+    <%= erb :menu %>
+    <div class="box2">
+      <p><%= horoscope %></p>
+      <p>
+        Don't like your horoscope? Reload the page. Your destiny is your own!
+      </p>
+    </div>
+  </body>
+</html>

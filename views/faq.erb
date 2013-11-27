@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <link href="css/main.css" media="all" rel="stylesheet">
+  <title>Totally Legit Horoscopes.com -- FAQ</title>
+</head>
+<body>
+  <div class='header'>
+    FAQ
+  </div>
+  <%= erb :menu %>
+  <div class='container'>
+    <p>
+      <h4>Q: Is this serious?</h4>
+      <p> 
+        I seriously believe this site is 100% as accurate as any other horoscope website.
+      </p>  
+    </p>
+
+    <form action="askaquestion.php" method="post">
+
+    <p>Name:</p>
+    <p><input type="text" name="name" value="Your name"></p>
+
+    <p>Email:</p>
+    <p><input type="text" name="email" value="Your email"></p>
+
+    <p>Message: </p>
+    <p><textarea name="comments" rows="10" cols="50">Hi, I love your site! It's the most accurate horoscope I've ever gotten!</textarea></p>
+
+    <p>Please check all that apply:</p>
+    <p><input type="checkbox" name="areyou" value="astroloy-enthusiast">I am offended that this site is not based on a traditional western astrological system</p>
+    <p><input type="checkbox" name="areyou" value="colors">I want to tell you your color scheme is awful</p>
+    <p><input type="checkbox" name="areyou" value="hire">I want to hire you to make computers go</p>
+    <p><input type="checkbox" name="areyou" value="spam">Spam!</p>
+
+    <p><input type="checkbox" name="areyou" value="html">I'm concerned I checked the html for this page, and this form goes nowhere.</p>
+
+    <p><input type="submit" value="I'll tell her!"></p>
+
+</form>
+    </p>
+  </div>
+</body>

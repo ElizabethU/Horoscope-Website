@@ -1,0 +1,15 @@
+<% horoscopes = %w[aries virgo sagittarius leo pisces aquarius scorpio cancer capricorn libra taurus gemini] %>
+
+    <div class='navbar'>
+      <ul class='dropdownmenu'>
+        <li>Find your Sign
+          <ul class='signlist'>
+            <% horoscopes.each do |sign| %>
+              <li class='button'><a href="/horoscopes/<%=sign%>"><%= sign%></a></li>
+            <% end %>
+          </ul>
+        </li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/about_me">About Me</a></li>
+      </ul>
+    </div>
