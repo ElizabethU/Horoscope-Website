@@ -10,6 +10,10 @@ a {
   color: #A30000;
 }
 
+@media screen and (max-width: 600px) {
+
+}
+
 .header {
   margin-bottom: 0px;
   font-size: 44px;
@@ -41,6 +45,7 @@ a {
   margin: 0;
 }
 
+/*Maybe not in use?*/
 .navbar ul.dropdownmenu ul.signlist{
   display: none;
   position: absolute;
@@ -66,16 +71,16 @@ h3 {
 }
 
 .container {
-  width: 700px;
+  width: 680px;
   margin: 50px auto;
-  background-color: #D9BF6C;
-  padding: 30px;
-  opacity: 0.65;
+  background-color: #D6C794;
+  padding: 50px;
+  opacity: 0.7;
 }
 
 .box {
   vertical-align: top;
-  width: 330px;
+  width: 320px;
   display: inline-block;
   padding: 5px;
 }

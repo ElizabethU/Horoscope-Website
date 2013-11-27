@@ -11,35 +11,44 @@
   <div class='container'>
     <h4>Q: Is this serious?</h4>
     <p> 
-      I seriously believe this site is 100% as accurate as any other horoscope website.
+      A: I seriously believe this site is 100% as accurate as any other horoscope website.
     </p>  
     <h4>Q: Then why does my horoscope change if I reload the page?</h4>
     <p> 
-      Because it's random.
+      A: Because it's random.
+    </p>
+    <h4>Q: I thought you said these horoscopes were totally legit?</h4>
+    <p> 
+      A: Yeah, well, don't believe everything you read on the internet.
     </p>
     <h4>Got a question? Contact me here:</h4>
+
     <form action="askaquestion.php" method="post">
+      <p>Name:</p>
+      <p><input type="text" name="name" value="Your name"></p>
 
-    <p>Name:</p>
-    <p><input type="text" name="name" value="Your name"></p>
+      <p>Email:</p>
+      <p><input type="text" name="email" value="Your email"></p>
 
-    <p>Email:</p>
-    <p><input type="text" name="email" value="Your email"></p>
+      <p>Type of Mail:</p>
+      <select id="mailtype">
+        <option>Fan Mail</option>
+        <option>Hate Mail</option>
+        <option>Job offer</option>
+      </select> 
 
-    <p>Message: </p>
-    <p><textarea name="comments" rows="10" cols="50">Hi, I love your site! It's the most accurate horoscope I've ever gotten!</textarea></p>
+      <p>Message: </p>
+      <p><textarea name="comments" rows="10" cols="50">Hi, I love your site! It's the most accurate horoscope I've ever gotten!</textarea></p>
 
-    <p>Please check all that apply:</p>
-    <p><input type="checkbox" name="areyou" value="astroloy-enthusiast">I am offended that this site is not based on a traditional western astrological system</p>
-    <p><input type="checkbox" name="areyou" value="colors">I want to tell you your color scheme is awful</p>
-    <p><input type="checkbox" name="areyou" value="hire">I want to hire you to make computers go</p>
-    <p><input type="checkbox" name="areyou" value="spam">Spam!</p>
+      <p>Please check all that apply:</p>
+      <p><input type="checkbox" name="areyou" value="astroloy-enthusiast">I am offended that this site is not based on a traditional western astrological system</p>
+      <p><input type="checkbox" name="areyou" value="colors">I want to tell you your color scheme is awful</p>
+      <p><input type="checkbox" name="areyou" value="hire">I want to hire you to make computers go</p>
+      <p><input type="checkbox" name="areyou" value="spam">Spam!</p>
 
-    <p><input type="checkbox" name="areyou" value="html">I'm concerned I checked the html for this page, and this form goes nowhere.</p>
+      <p><input type="checkbox" name="areyou" value="html">I'm concerned I checked the html for this page, and this form goes nowhere.</p>
 
-    <p><input type="submit" value="I'll tell her!"></p>
-
-</form>
-    </p>
+      <p><input type="submit" value="I'll tell her!"></p>
+    </form>
   </div>
 </body>
