@@ -7,9 +7,11 @@
 <body>
     <div class='header'>
         <%= locals[:title] %>
-<!--       Totally Legit Horoscopes -->
     </div>
     <%= erb :menu %>
+    <% @posts.each do |post| %>
+      <a href="/blog/<%= post %>"><%= post %></q>
+    <% end %>
     <%= yield %>
 </body>
-</html>
+</html> 

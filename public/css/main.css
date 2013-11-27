@@ -24,44 +24,47 @@ a {
   outline: 2px solid #A30000;
 }
 
-.navbar {
+ul.navbar {
   background-color: #FFFFFF;
   color: #000000;
   font-size: 20px;
-  padding: 0;
-  margin: 0;
+  opacity: 0.9;
 }
 
-.navbar ul li {
+ul.navbar li {
   display: inline-block;
   position: relative;
   padding-left: 30px;
   margin: 0;
 }
 
-.navbar ul, .navbar ul ul {
+/* Deletes circles by lists, destroys margins */
+ul.navbar, ul.navbar ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/*Maybe not in use?*/
-.navbar ul.dropdownmenu ul.signlist{
+/*Hides drop down, keeps things in place when opened*/
+ul.navbar ul.signlist{
   display: none;
   position: absolute;
 }
 
-.navbar ul.dropdownmenu ul.signlist li{
+/*Drop down formatting within list item*/
+ul.navbar ul.signlist li{
   display: block;
   margin: 0;
   padding: 5px;
 }
 
-.navbar ul.dropdownmenu ul.signlist li:hover {
+/*Changes background of selected sign*/
+ul.navbar ul.signlist li:hover {
   background-color: #FFFFFF;
+  opacity 0.9;
 }
 
-.navbar ul.dropdownmenu li:hover > ul {
+ul.navbar li:hover > ul {
   display: block;
 }
 
@@ -107,7 +110,6 @@ img.rosie-and-gilda1 {
 }
 
 .button {
-  display: block;
   width: 125px;
   height: 20px;
   background: #D6C794;
