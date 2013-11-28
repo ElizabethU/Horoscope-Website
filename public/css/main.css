@@ -24,13 +24,16 @@ a {
   outline: 2px solid #A30000;
 }
 
+/*Formats entire nav bar*/
 ul.navbar {
   background-color: #FFFFFF;
   color: #000000;
   font-size: 20px;
   opacity: 0.9;
+  list-style-type: none;
 }
 
+/*Makes outer list go across*/
 ul.navbar li {
   display: inline-block;
   position: relative;
@@ -40,7 +43,6 @@ ul.navbar li {
 
 /* Deletes circles by lists, destroys margins */
 ul.navbar, ul.navbar ul {
-  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -64,7 +66,8 @@ ul.navbar ul.signlist li:hover {
   opacity 0.9;
 }
 
-ul.navbar li:hover > ul {
+/*Shows on hover*/
+ul.navbar li:hover ul {
   display: block;
 }
 
@@ -76,9 +79,8 @@ h3 {
 .container {
   width: 680px;
   margin: 50px auto;
-  background-color: #D6C794;
+  background-color: rgba(214, 199, 148, 0.7);
   padding: 50px;
-  opacity: 0.7;
 }
 
 .box {
@@ -100,9 +102,8 @@ h3 {
   text-align: left;
   width: 440px;
   margin: 50px auto;
-  background-color: #D6C794;
+  background-color: rgba(214, 199, 148, 0.7);
   padding: 50px;
-  opacity: 0.7;
 }
 
 img.rosie-and-gilda1 {
