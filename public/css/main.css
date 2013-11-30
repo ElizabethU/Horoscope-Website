@@ -41,7 +41,7 @@ ul.navbar li {
   margin: 0;
 }
 
-/* Deletes circles by lists, destroys margins */
+/* Destroys margins */
 ul.navbar, ul.navbar ul {
   padding: 0;
   margin: 0;
@@ -69,6 +69,17 @@ ul.navbar ul.signlist li:hover {
 /*Shows on hover*/
 ul.navbar li:hover ul {
   display: block;
+}
+
+.button {
+  width: 125px;
+  height: 20px;
+  background: #D6C794;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0.7;
 }
 
 h3 {
@@ -108,15 +119,4 @@ h3 {
 
 img.rosie-and-gilda1 {
   max-width: 600px;
-}
-
-.button {
-  width: 125px;
-  height: 20px;
-  background: #D6C794;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  opacity: 0.7;
 }
