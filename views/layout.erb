@@ -5,10 +5,18 @@
   <title>Totally Legit Horoscopes.com -- The best in automated internet horoscores</title>
 </head>
 <body>
+    <%show_menu = true if show_menu.nil? %>
     <div class='header'>
-        <%= locals[:title] %>
+        <%if locals[:title] == 'Totally Legit Horoscopes' %>
+          <%= locals[:title] %>
+        <%else%>
+          <%= 'Totally Legit Horoscopes: ' + locals[:title] %>
+        <%end%>
     </div>
-    <%= erb :menu %>
+    <div class='redline'></div>
+    <% unless show_menu == false %>
+      <%= erb :menu %>
+    <% end %>
     <%= yield %>
 </body>
 </html> 

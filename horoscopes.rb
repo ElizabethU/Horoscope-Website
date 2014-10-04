@@ -4,7 +4,7 @@ class Horoscope
     adjectives = ["ambitious", "analytical", "blindly optimistic", "boisterous", "bold", "careless", "caring", "careful", "charming", "compassionate", "competitive", "conservative", "convivial", "contrary", "creative", "deep", "delicate", "detached", "determined", "devoted", "diplomatic", "disciplined","dramatic", "eager", "empathic", "energetic", "enjoy working with your hands", "exuberant", "fair-minded", "fiery", "flirtacious", "forgiving", "frank", "freedom-loving", "friendly", "funny", "generous", "gentle", "good-humored", "gregarious", "honest", "humanitarian", "humble", "humorous", "indecisive", "independent", "impatient", "imaginative", "intellectual", "intense", "intoverted", "intractable", "intuitive", "inventive", "irresponsible", "jovial", "kind", "loyal", "magnetic", "methodical", "moody", "modest", "never boring", "observant", "obstinate", "optimistic", "original", "outgoing", "patient", "passionate", "perverse", "philosophical", "plucky", "placid", "practical", "quick", "ready for fun", "reliable", "resentful", "restless", "restless", "self assured", "sensitive", "sensible", "sentimental", "sentimental", "serious", "sharpwitted", "shy", "sincere", "stable", "straightforward", "stubborn", "superficial", "tactless", "undisciplined", "unemotional", "unpredictable", "unworldly"] 
     number_of_characteristics = rand(4..6)
     adj_string = ""
-   number_of_characteristics.times { adj_string << adjectives.sample << ", " }
+    number_of_characteristics.times { adj_string << adjectives.sample << ", " }
     adj_string << "and " + adjectives.sample
   end
 

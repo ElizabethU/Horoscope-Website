@@ -10,7 +10,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/cute_pictures_of_animals" do
-    erb :cute_pictures_of_animals, :locals => {:title => "Cute Pictures of Animals"}
+    erb :cute_pictures_of_animals, :locals => {:title => "Cute Pictures of Animals", :show_menu => false }
   end
 
   get "/about_me" do
