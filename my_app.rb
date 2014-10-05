@@ -18,7 +18,7 @@ class MyApp < Sinatra::Base
   end
 
   get "/horoscopes/:sign" do
-    erb :signs, :locals => {:sign => params[:sign], :horoscope => Horoscope.return_random_horoscope(params[:sign]), :title => params[:sign]}
+    erb :signs, :locals => {:sign => params[:sign], :horoscope => Horoscope.return_random_horoscope(params[:sign]), :title => params[:sign], :compatibility => Horoscope.compatible_signs(params[:sign])}
   end
 
   get "/faq" do

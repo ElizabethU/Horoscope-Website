@@ -1,5 +1,9 @@
     <div class="box2">
       <p><%= horoscope %></p>
+
+      <% compatibility.each do |statement| %>
+        <p><%= statement %></p>
+      <% end %>
       <h5>
         Don't like your horoscope? Reload the page. Your destiny is your own!
       </h5>

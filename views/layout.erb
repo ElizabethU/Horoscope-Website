@@ -10,7 +10,7 @@
         <%if locals[:title] == 'Totally Legit Horoscopes' %>
           <%= locals[:title] %>
         <%else%>
-          <%= 'Totally Legit Horoscopes: ' + locals[:title] %>
+          <a href='/'><%='Totally Legit Horoscopes'%></a><%=': ' + locals[:title] %>
         <%end%>
     </div>
     <div class='redline'></div>
